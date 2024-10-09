@@ -1,0 +1,30 @@
+/* Full height layout */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Makes the container take full height of the viewport */
+  }
+  
+  .content {
+    flex: 1; /* The content will expand and take up all available space */
+  }
+  
+  /* Styling for the footer */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .footer-bottom {
+    background-color: #222;
+    padding: 1rem 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
