@@ -1,9 +1,11 @@
 // server.js
 import dotenv from "dotenv"
+import cors from 'cors'
 import express from "express";
 import connectDB from "./config/db.connection.js";
 import webtoon from "./routes/webtoonRoutes.js";
 import cloudinary from "cloudinary";
+
 
 const app = express();
 dotenv.config()
@@ -21,6 +23,12 @@ cloudinary.v2.config({
 // Middleware to parse JSON requests
 app.use(express.json());
 app.use('/api/v1/webtoon',webtoon)
+app.use(
+  cors({
+    origin: [process.env.FRONTEND_URL,"http://localhost:3000"],
+    credentials: true
+  })
+);
 
 // Test Route
 app.get("/", (req, res) => {

@@ -5,9 +5,7 @@ import Footer from '../layout/footer/Footer'
 const CreateWebtoon = () => {
   return (
     <>
-        <Navbar/>
         <h1>hello everryone</h1>
-        <Footer/>
     </>
   )
 }

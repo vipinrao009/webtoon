@@ -4,9 +4,10 @@ body{
 }
 .footer {
     background-color: #333;
+    display:ruby-text-container;
     align-items: end;
     color: #fff;
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
     position: relative;
     bottom: 0;
     width: 100%;
@@ -18,9 +19,6 @@ body{
     flex-wrap: wrap;
   }
   
-  .footer-section {
-    margin: 1rem 0;
-  }
   
   .footer-section h3 {
     margin-bottom: 1rem;
@@ -69,6 +67,7 @@ body{
     padding: 1rem 0;
     background-color: #222;
     margin-top: 1rem;
+    margin-bottom: -11%;
   }
   
   .footer-bottom p {
@@ -81,9 +80,32 @@ body{
       flex-direction: column;
       text-align: center;
     }
+    .footer-section.links {
+        display: none;
+    }
+
+    .footer-bottom{
+        margin-bottom: -10%;
+    }
   
-    .footer-section {
+    .footer-section about{
       margin-bottom: 2rem;
+      justify-content: center;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px){
+    .footer-section.links {
+        display: none;
+    }
+    .footer .footer-section.about p{
+        margin-left: 14rem;
     }
   }
   
+  @media (min-width: 1024px){
+    .footer-bottom{
+        margin-bottom: -3%;
+    }
+    
+  }
