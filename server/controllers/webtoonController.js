@@ -44,4 +44,20 @@ const postWebtoon = async (req, res, next) => {
   }
 };
 
-export { postWebtoon };
+const fetchWebtoon = async (req,res)=>{
+    try {
+        const webtoons = await WebToon.find();
+        res.status(200).json({
+            message:"Webtoon fetched successfully",
+            success:true,
+            webtoons
+        })
+    } catch (error) {
+        res.status(400).json({
+            message:"Failed to load webtoon",
+            success:false
+        })
+    }
+}
+
+export { postWebtoon, fetchWebtoon };
