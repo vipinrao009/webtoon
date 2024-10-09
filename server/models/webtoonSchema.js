@@ -2,9 +2,16 @@ import { Schema,model } from "mongoose";
 
 const webtoonSchema =new Schema({
     title: String,
-    image: String,
+    image: {
+        public_id: {
+          type: String,
+        },
+        secure_url: {
+          type: String,
+        },
+      },
     description: String,
-},{timestamps})
+},{timestamps:true})
 
 const WebToon = model('Webtoon',webtoonSchema)
 
