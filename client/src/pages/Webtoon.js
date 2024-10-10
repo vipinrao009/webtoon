@@ -10,7 +10,7 @@ const WebtoonComponent = () => {
 
     const FetchWebtoon = async () => {
         try {
-            const { data } = await axios.get("http://localhost:8000/api/v1/webtoon/fetch-webtoon?limit=5");
+            const { data } = await axios.get("https://webtoon-1.onrender.com/api/v1/webtoon/fetch-webtoon?limit=5");
 
             if (data.success) {
                 setWebtoon(data.webtoons);

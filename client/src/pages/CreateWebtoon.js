@@ -28,7 +28,7 @@ const CreateWebtoon = () => {
             formData.append('image', image);
             formData.append('description', description);
     
-            const response = await axios.post("http://localhost:8000/api/v1/webtoon/post-webtoon", formData);
+            const response = await axios.post("https://webtoon-1.onrender.com/api/v1/webtoon/post-webtoon", formData);
     
             if (response.data.success) {
                 toast.success("Webtoon created successfully!!!!");
