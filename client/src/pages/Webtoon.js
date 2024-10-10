@@ -11,7 +11,7 @@ const WebtoonComponent = () => {
     const FetchWebtoon = async () => {
         try {
             const { data } = await axios.get("http://localhost:8000/api/v1/webtoon/fetch-webtoon?limit=5");
-            console.log("Webtoon data:", data.webtoons);
+
             if (data.success) {
                 setWebtoon(data.webtoons);
             }
@@ -37,7 +37,7 @@ const WebtoonComponent = () => {
             {webtoon.length > 0 ? (
                 webtoon.map((item) => (
                     <Card
-                        key={item.id}
+                        key={item._id}
                         imageUrl={item.image.secure_url}
                         title={item?.title}
                         description={item.description}
