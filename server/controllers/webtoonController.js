@@ -38,7 +38,11 @@ const postWebtoon = async (req, res, next) => {
     }
 
     await newWebtoon.save();
-    res.status(201).json(newWebtoon);
+    res.status(201).json({
+        message:"Webtoon created successfully",
+        success:true,
+        newWebtoon
+    });
   } catch (error) {
     res.status(500).json({ message: "Failed to add webtoon" });
   }

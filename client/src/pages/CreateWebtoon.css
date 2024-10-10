@@ -1,0 +1,104 @@
+/* Basic styling for the Create Webtoon page */
+.create-webtoon-container {
+    /* margin: 0 auto; */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+
+}
+
+.card1 {
+    width: 600px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.create-webtoon-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    width: 600px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form-group input[type="file"] {
+    display: block;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.create-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+
+    .card1 {
+        width: 280px;
+        height: auto;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        border: 2px solid rgb(0, 0, 0);
+        padding: 1rem;
+        border-radius: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: white;
+    }
+
+    .create-webtoon-container h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+        width: 200px;
+    }
+
+    .create-button {
+        font-size: 16px;
+    }
+}

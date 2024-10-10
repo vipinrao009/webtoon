@@ -16,6 +16,10 @@
     color: #fff;
     margin: 0;
   }
+
+  .logo{
+    text-decoration: none;
+  }
   
   /* Navbar links styling */
   .nav-links {

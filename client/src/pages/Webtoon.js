@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import CreateWebtoon from './CreateWebtoon'
 import Navbar from '../layout/navbar/Navbar'
 import Footer from '../layout/footer/Footer'
 import axios from 'axios'
